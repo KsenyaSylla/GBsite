@@ -47,7 +47,22 @@ header {
 
 .burger_menu,
 .personal {
-    padding-right: 33px;
+    margin-right: 33px;
+}
+
+
+/* .menu_personal_cart::not(:last-child) {
+    margin-right: 33px;
+} */
+
+.burger_menu {
+    background-color: #222222;
+    border: none;
+    padding: 0px;
+}
+
+.burger_menu:hover {
+    cursor: pointer;
 }
 
 .intro {
@@ -257,4 +272,137 @@ header {
     font-size: 13.972px;
     line-height: 17px;
     color: #FBFBFB;
+}
+
+.feedback_subscribe_background {
+    background-image: url(img/feedback_subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.feedback_subscribe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feedback {
+    margin-top: 86px;
+}
+
+.feedback_center {
+    text-align: center;
+}
+
+.text_feedback {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form_subscribe {
+    display: flex;
+    align-self: center;
+    /* margin-top: 150px; */
+}
+
+.subscribe_text {
+    text-align: center;
+}
+
+.subscribe_heading {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    /* or 40px */
+    color: #222224;
+}
+
+.subscribe_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 40px */
+    color: #222224;
+    margin-bottom: 32px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.mail {
+    border: none;
+    background-color: #E1E1E1;
+    padding: 17px 64px 16px 25px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.subscribe_input {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    padding: 17px 25px;
+}
+
+.copyright_networks {
+    background-color: #222224;
+    height: 79px;
+}
+
+.copyright_networks_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    margin-top: 30px;
+}
+
+
+/* .networks:not(:last-child) {
+    margin-right: 7px;
+} */
+
+.network_facebook,
+.network_instagram,
+.network_pinterest,
+.network_twitter {
+    background-color: #FFFFFF;
+}
+
+.networks {
+    margin-top: 24px;
+}
+
+.network_facebook {
+    padding: 8px 11px;
+    margin-right: 7px;
+}
+
+.network_instagram {
+    padding: 8px;
+    margin-right: 7px;
+}
+
+.network_pinterest {
+    padding: 8px 9px;
+    margin-right: 7px;
+}
+
+.network_twitter {
+    padding: 8px;
 }
