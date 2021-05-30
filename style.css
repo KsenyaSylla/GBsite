@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 1160px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -67,22 +67,34 @@ margin-right: 33px;
 
 .intro {
     background-color: #F1E4E6;
-    background-image: url(img/img_main.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 764px;
     margin-bottom: 65px;
 }
 
-.text_intro {
+.intro_wrap {
+    height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    margin-left: 800px;
-    /* padding-left: 64px; */
-    padding-top: 290px;
+    justify-content: flex-end;
+}
+
+.intro_background_img {
+    background-image: url(img/img_main.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 764px;
+    display: flex;
+}
+
+.text_intro {
+    margin-top: 290px;
+    width: 50%;
+    display: flex;
+    padding-left: 64px;
 }
 
 .baton_intro {
+    align-self: center;
+    justify-self: center;
     width: 12px;
     height: 92px;
     background-color: #F16D7F;
