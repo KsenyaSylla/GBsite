@@ -15,6 +15,9 @@ body {
     margin: 0 auto;
 }
 
+
+/* стили для header */
+
 header {
     height: 75px;
     background-color: #222222;
@@ -69,6 +72,9 @@ margin-right: 33px;
     background-color: #F1E4E6;
     margin-bottom: 65px;
 }
+
+
+/* стили для главной страницы, заголовок с картинкой */
 
 .intro_wrap {
     height: 100%;
@@ -126,6 +132,9 @@ margin-right: 33px;
     color: #F16D7F;
 }
 
+
+/* блок с примерами, что продают. Главная страница */
+
 .boxes_up {
     display: flex;
     justify-content: space-between;
@@ -177,6 +186,9 @@ margin-right: 33px;
     margin-bottom: 96px;
 }
 
+
+/* блок с примерами из каталога, */
+
 .products_heading_center {
     text-align: center;
     margin-bottom: 6px;
@@ -195,6 +207,9 @@ margin-right: 33px;
     text-align: center;
     margin-bottom: 48px;
 }
+
+
+/*стили для карточек каталога*/
 
 .card_heading {
     font-size: 13px;
@@ -218,6 +233,9 @@ margin-right: 33px;
     color: #F16D7F;
 }
 
+
+/*позиционирование карточек товара на главной странице и в каталоге*/
+
 .product_cards_1line {
     display: flex;
     margin-bottom: 30px;
@@ -232,6 +250,9 @@ margin-right: 33px;
     display: flex;
     margin-bottom: 48px;
 }
+
+
+/*снова стили карточек*/
 
 .product_card {
     width: 360px;
@@ -248,6 +269,9 @@ margin-right: 33px;
     margin-bottom: 20px;
 }
 
+
+/*кнопка ссылка на каталог*/
+
 .button {
     display: flex;
     justify-content: center;
@@ -263,6 +287,12 @@ margin-right: 33px;
     border: 1px solid;
     padding: 14px 38px;
 }
+
+
+/*начало стилей футера*/
+
+
+/*сервисы*/
 
 .services_background {
     background-color: #222224;
@@ -290,6 +320,9 @@ margin-right: 33px;
     line-height: 17px;
     color: #FBFBFB;
 }
+
+
+/*отзыв, форма подписки*/
 
 .feedback_subscribe_background {
     background-image: url(img/feedback_subscribe.jpg);
@@ -373,6 +406,9 @@ margin-right: 33px;
     padding: 17px 25px;
 }
 
+
+/*подвальный подвал: копирайт и ссылки на соцсети*/
+
 .copyright_networks {
     background-color: #222224;
     height: 79px;
@@ -446,6 +482,12 @@ margin-right: 7px;
     padding: 8px;
 }
 
+
+/*конец стилей футера*/
+
+
+/*страница каталога, навигация*/
+
 .pink_background {
     background-color: #F8F3F4;
 }
@@ -489,30 +531,8 @@ margin-right: 7px;
     color: #F26376;
 }
 
-.crumbs {
-    margin-top: 65px;
-    margin-bottom: 65px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-    color: #636363;
-}
 
-.home_link,
-.men_link,
-.new_arivals_link {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-    color: #636363;
-    text-decoration: none;
-}
-
-.new_arivals_link {
-    color: #F26376;
-}
+/*попытки сделать выпадающее меню фильтра*/
 
 .filter_flex {
     display: flex;
@@ -567,6 +587,9 @@ summary::marker {
     margin-left: 20px;
 }
 
+
+/*фильтры по размерам и прочая. Страница каталога*/
+
 .trending_size_price {
     display: flex;
     margin-left: 390px;
@@ -583,6 +606,9 @@ summary::marker {
 .size {
     margin-right: 28px;
 }
+
+
+/*блок с нумерацией страниц для перехода на нужную со страницы каталога*/
 
 .pages_center {
     display: flex;
@@ -620,4 +646,104 @@ summary::marker {
 
 .page {
     padding-left: 18px;
+}
+
+
+/*страница продукта*/
+
+
+/*стрелки слайдера*/
+
+.slider_background_flex {
+    background-color: #F7F7F7;
+    height: 777px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_arrow_left,
+.slider_arrow_right {
+    background-color: rgba(42, 42, 42, 0.15);
+    padding: 13px 17px;
+    align-self: center;
+}
+
+
+/*картинка каталога для страницы продукта*/
+
+.slider {
+    margin-top: 11px;
+    justify-self: center;
+    width: 100%;
+}
+
+
+/*описание продукта*/
+
+.product_discription_box {
+    display: flex;
+    justify-content: center;
+    height: 601px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: -65px;
+    border: 1px solid #EAEAEA;
+}
+
+.product_discription {
+    padding-top: 65px;
+    text-align: center;
+}
+
+.women_collection_link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.slash {
+    width: 63px;
+    height: 3px;
+    background-color: #EF5B70;
+    margin-bottom: 12px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+}
+.product_name {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+.product_discription_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    margin-top: 49px;
+    margin-bottom: 32px;
+}
+.product_discription_center {
+    width: 641px;
+}
+.product_price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-bottom: 65px;
+}
+.product_hr {
+    border: none;
+    color: #EAEAEA;
+    height: 1px;
+    background-color: #EAEAEA;
 }
