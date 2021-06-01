@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=cyrillic' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/599e8c3212.js" crossorigin="anonymous"></script>
     <title>Каталог</title>
 </head>
 
@@ -15,7 +16,7 @@
         <div class="container">
             <div class="header">
                 <div class="logo">
-                    <a href="#" class="logo_header_link"><img src="img/logo.png" alt="logo"></a>
+                    <a href="index.html" class="logo_header_link"><img src="img/logo.png" alt="logo"></a>
                     <a href="#" class="search_header_link"><img src="img/magnifier.svg" alt="search"></a>
 
                 </div>
@@ -32,7 +33,7 @@
         <div class="pink_background">
             <div class="container">
                 <div class="nav_flex">
-                    <h2 class="new_arrivas_heading">NEW ARRIVALS </h2>
+                    <h1 class="new_arrivas_heading">NEW ARRIVALS </h1>
                     <div class="crumbs">
                         <a href="#" class="home_link">HOME</a><span>/</span>
                         <a href="#" class="men_link">MEN</a><span>/</span>
@@ -43,27 +44,61 @@
         </div>
 
     </nav>
-    <article>
-        <div class="container">
-            <div class="filter_flex">
-                <div class="details filter">
-                    <h4>FILTER</h4><img src="img/filter.svg" alt="filter" class="img_filter">
-                </div>
-                <div class="trending_size_price">
-                    <details class="trending">
-                        <summary>TRENDING NOW</summary>
-                    </details>
-                    <details class="size">
-                        <summary>SIZE</summary>
-                    </details>
-                    <details class="price_filter">
-                        <summary>PRICE</summary>
-                    </details>
+    <main>
+        <article>
+            <div class="container">
+                <div class="filter_flex">
+                    <div class="details_filter">
+                        <details class="filter">
+                            <summary>
+                                <h4 class="summary_filter">FILTER
+                                    <svg class="filter_svg" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
+                                    </svg></h4>
+                            </summary>
+                            <details class="category_details">
+                                <summary class="summary">CATEGORY</summary>
+                                <ul class="category_list">
+                                    <li class="filter_details_li">Accesoires</li>
+                                    <li class="filter_details_li">Bags</li>
+                                    <li class="filter_details_li">Hoodies & Sweatshirts</li>
+                                    <li class="filter_details_li">Jackets & Coats</li>
+                                    <li class="filter_details_li">Polos</li>
+                                    <li class="filter_details_li">Shirts</li>
+                                    <li class="filter_details_li">Shoes</li>
+                                    <li class="filter_details_li">Sweaters & Knits</li>
+                                    <li class="filter_details_li">T-Shirts</li>
+                                    <li class="filter_details_li">Tanks</li>
+                                </ul>
+                            </details>
+                            <details class="brand_details">
+                                <summary class="summary">BRAND</summary>
+                            </details>
+                            <details class="designer_details">
+                                <summary class="summary">DESIGNER</summary>
+                            </details>
+                        </details>
+                    </div>
+
+
+                    <div class="trending_size_price">
+                        <p class="trending">
+                            TRENDING NOW
+                            <span class="trending_size_price_img"><img src="img/arrow_down.svg" alt="arrow"></span>
+                        </p>
+                        <p class="size">
+                            SIZE
+                            <span class="trending_size_price_img"><img src="img/arrow_down.svg" alt="arrow"></span>
+                        </p>
+                        <p class="price_filter">
+                            PRICE
+                            <span class="trending_size_price_img"><img src="img/arrow_down.svg" alt="arrow"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </article>
-    <main>
+        </article>
+
         <div class="container">
             <div class="product_cards_1line">
                 <article class="product_card product_cards_margin">
@@ -192,12 +227,11 @@
                 <a href="#" class="page">4</a>
                 <a href="#" class="page">5</a>
                 <a href="#" class="page">6</a>
-                <a href="#" class="page_others">.....</a>
+                <span href="#" class="page_others">.....</span>
                 <a href="#" class="page_20">20</a>
                 <a href="#" class="arrow_right"><img src="img/arrow_right.svg" alt=""></a>
             </article>
         </div>
-
     </main>
 
     <footer>
@@ -259,10 +293,10 @@
                 <div class="copyright_networks_flex">
                     <div class="copyright">&copy; 2021 Brand All Rights Reserved.</div>
                     <div class="networks">
-                        <a href="" class="network_facebook"><img src="img/facebook.svg" alt="facebook"></a>
-                        <a href="" class="network_instagram"><img src="img/instagram.svg" alt="instagram"></a>
-                        <a href="" class="network_pinterest"><img src="img/pinterest.svg" alt="pinterest"></a>
-                        <a href="" class="network_twitter"><img src="img/twitter.svg" alt="twitter"></a>
+                        <a href="" class="network_facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="network_instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="network_pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="" class="network_twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
