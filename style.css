@@ -534,6 +534,16 @@ margin-right: 7px;
 
 /*попытки сделать выпадающее меню фильтра*/
 
+details {
+    list-style-type: none;
+    marker: none;
+}
+
+
+/* ::marker {
+    display: none;
+} */
+
 .filter_flex {
     display: flex;
     margin-bottom: 64px;
@@ -562,17 +572,40 @@ margin-right: 7px;
     color: #EF5B70;
 }
 
+.filter_svg {
+    margin-left: 11px;
+}
+
 .img_filter {
     margin-left: 11px;
     margin-right: 304px;
 }
 
-summary::marker {
+::-webkit-details-marker {
     display: none;
+}
+
+.summary {
+    border-left: 5px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+    margin-bottom: 25px;
+}
+
+summary:hover {
+    color: #EF5B70;
 }
 
 .summary_filter {
     display: flex;
+}
+
+.category_list {
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #6F6E6E;
 }
 
 .designer_details,
@@ -585,6 +618,10 @@ summary::marker {
     background-color: #FFFFFF;
     list-style-type: none;
     margin-left: 20px;
+}
+
+.filter_details_li {
+    margin-bottom: 11px;
 }
 
 
