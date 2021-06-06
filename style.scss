@@ -1168,6 +1168,11 @@ summary:hover {
                 transition: 1s;
                 transform: rotateY(90deg);
             }
+            & button svg:hover {
+            transition: 1s;
+            transform: scale(200);
+            fill: #000000;
+            }
         }
     }
 }
