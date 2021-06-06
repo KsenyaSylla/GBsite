@@ -1164,6 +1164,10 @@ summary:hover {
                     cursor: pointer;
                 }
             }
+            & button:hover {
+                transition: 1s;
+                transform: rotateY(90deg);
+            }
         }
     }
 }
