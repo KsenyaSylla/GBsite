@@ -1002,6 +1002,18 @@ summary:hover {
   padding: 1px 15px;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .delete_from_cart {
   padding-top: 28px;
   padding-right: 22px;
@@ -1259,6 +1271,21 @@ summary:hover {
   color: #FFFFFF;
   border: none;
   cursor: pointer;
+}
+
+.registration__flex .reg button:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.registration__flex .reg button svg:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(200);
+          transform: scale(200);
+  fill: #000000;
 }
 
 .reg__text {
