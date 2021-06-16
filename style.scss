@@ -313,7 +313,7 @@ margin-right: 33px;
     /* display: none; */
     opacity: 0;
     /*  transform: scale(0);
-    transform-origin: right top; */
+transform-origin: right top; */
     transition: 0.5s;
 }
 
@@ -1285,11 +1285,14 @@ input[type=number] {
     .heading_flex {
         margin-left: 16px;
     }
-    .product_card__margin_right__768 {
-        margin-right: 29px;
-    }
-    .registration__flex {
-        padding: 0 17px;
+    .product_card__margin_right {
+        margin-right: 0;
+        &__768 {
+            margin-right: 16px;
+        }
+        .registration__flex {
+            padding: 0 17px;
+        }
     }
 }
 
@@ -1332,7 +1335,7 @@ input[type=number] {
         }
     }
     .product_card__margin_right {
-        margin-right: 0px;
+        margin-right: 0;
         &__768 {
             margin-right: 16px;
         }
@@ -1441,5 +1444,8 @@ input[type=number] {
         .reg__form {
             margin-bottom: 40px;
         }
+    }
+    .filter_flex {
+        flex-direction: column;
     }
 }
