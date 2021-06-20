@@ -9,12 +9,17 @@
 
 body {
   font-family: Lato;
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-rows: auto 1fr min-content;
+      grid-template-rows: auto 1fr -webkit-min-content;
+      grid-template-rows: auto 1fr min-content;
 }
 
 .container {
   max-width: 1140px;
   width: 100%;
-  padding: 0;
   margin: 0 auto;
 }
 
@@ -140,12 +145,11 @@ margin-right: 33px;
 .intro {
   background-color: #F1E4E6;
   margin-bottom: 65px;
-  height: calc(100vh-75px);
+  max-height: 776px;
   /* стили для главной страницы, заголовок с картинкой */
 }
 
 .intro_wrap {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,18 +159,20 @@ margin-right: 33px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 50%;
 }
 
 .intro_background_img {
   background-image: url(img/img_main.png);
   background-repeat: no-repeat;
   background-position: left;
-  min-height: 764px;
+  background-size: contain;
   z-index: 0;
 }
 
 .text_intro {
-  margin-top: 40vh;
+  margin-top: 30%;
+  margin-bottom: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,6 +267,7 @@ margin-right: 33px;
 .box_accesoires {
   background-image: url(img/layer2.png), url(img/accesoires.jpg);
   max-width: 1140px;
+  background-size: contain;
   height: 180px;
   padding-top: 65px;
 }
@@ -537,7 +544,7 @@ transform-origin: right top; */
 .mail {
   border: none;
   background-color: #E1E1E1;
-  padding: 17px 64px 16px 25px;
+  padding: 17px 25px 16px 25px;
   border: none;
   border-radius: 25px 0 0 25px;
   font-size: 14px;
@@ -845,7 +852,7 @@ summary:hover {
 .slider_background_flex {
   position: relative;
   background-color: #F7F7F7;
-  height: 777px;
+  max-height: 777px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,8 +1084,7 @@ summary:hover {
 }
 
 .img_in_cart {
-  width: 262px;
-  height: 306px;
+  max-width: 262px;
 }
 
 .heading_in_cart {
@@ -1443,6 +1449,9 @@ input[type=number] {
 }
 
 @media (max-width: 1140px) {
+  .container {
+    padding: 0 10px;
+  }
   .heading_flex {
     margin-left: 16px;
     margin-right: 16px;
@@ -1480,6 +1489,31 @@ input[type=number] {
   .product_card_delete {
     display: none;
   }
+  .text_intro {
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+  .product_discription_box {
+    margin-top: 0;
+  }
+  .products_in_cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .buttons_in_cart {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1488,9 +1522,6 @@ input[type=number] {
   }
   .intro {
     margin-bottom: 20px;
-  }
-  .intro_background_img {
-    background-image: url(img/intro_img_medium.png);
   }
   .intro_background_img_wrap {
     padding-left: 48%;
@@ -1545,6 +1576,7 @@ input[type=number] {
   }
   .feedback_subscribe_background {
     background-position: bottom;
+    background-size: 100%;
   }
   .feedback_subscribe {
     -webkit-box-orient: vertical;
@@ -1580,6 +1612,7 @@ input[type=number] {
     margin-bottom: 65px;
   }
   .shipping_adress_box {
+    padding: 0 10px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1594,8 +1627,35 @@ input[type=number] {
 }
 
 @media (max-width: 700px) {
-  .item_discription_in_cart {
+  .item_in_cart .item_discription_in_cart {
     padding-right: 32px;
+  }
+  .shipping_adress_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .intro_background_img {
+    background-image: none;
+  }
+  .heading_in_cart {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .item_discription_in_cart p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .quantity_in_cart_text_input {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
@@ -1620,10 +1680,16 @@ input[type=number] {
   .heading_flex .buttons_in_cart {
     font-size: 12px;
     line-height: 14px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .heading_flex .buttons_in_cart .clear_cart,
   .heading_flex .buttons_in_cart .continue_shopping {
     padding: 9px 18px;
+  }
+  .heading_flex .buttons_in_cart .clear_cart {
+    margin-right: 10px;
   }
   .registration__flex {
     -webkit-box-orient: vertical;
@@ -1666,32 +1732,6 @@ input[type=number] {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-@media (max-width: 375px) {
-  .heading_flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .intro_background_img {
-    background-image: none;
-  }
-  .intro_wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .text_intro {
-    padding-left: 0;
-  }
-  .text_intro .baton_intro {
-    height: 61px;
-  }
   .big_text_intro {
     font-weight: 900;
     font-size: 38px;
@@ -1704,6 +1744,36 @@ input[type=number] {
   .middle_pink_text_intro {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .heading_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro {
+    max-height: 258px;
+  }
+  .intro_background_img {
+    background-image: none;
+  }
+  .intro_wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .text_intro {
+    padding-left: 0;
+  }
+  .text_intro .baton_intro {
+    height: 61px;
   }
   .boxes_up {
     -webkit-box-orient: vertical;
